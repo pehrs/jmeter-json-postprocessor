@@ -17,7 +17,6 @@ This plugin enables you to view the formatted JSON responses
 
 Unpack and copy the plugin and the dependent jackson jars to the ${JMETERHOME}/lib/ext directory 
 
-	$ cd ${SRC}/system-test/ininbo-jmeter-addon
 	$ cp target/jmeter-json-postprocessor-*.jar ${JMETERHOME}/lib/ext
 	$ cp target/dependency/jackson-annotations-*.jar ${JMETERHOME}/lib/ext
 	$ cp target/dependency/jackson-core-*.jar ${JMETERHOME}/lib/ext
