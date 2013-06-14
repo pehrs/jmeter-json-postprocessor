@@ -15,7 +15,7 @@ This plugin enables you to view the formatted JSON responses
 	$ mvn package
 	$ mvn dependency:copy-dependencies
 
-Unpack and copy the plugin and the dependent jackson jars to the ${JMETERHOME}/lib/ext directory 
+Copy the plugin and the dependent jackson jars to the ${JMETERHOME}/lib/ext directory 
 
 	$ cp target/jmeter-json-postprocessor-*.jar ${JMETERHOME}/lib/ext
 	$ cp target/dependency/jackson-annotations-*.jar ${JMETERHOME}/lib/ext
