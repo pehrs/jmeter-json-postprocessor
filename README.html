@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>README.md</title>
+
+</head>
+
+<body>
+
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = "en_US:en",
+	LC_ALL = (unset),
+	LC_PAPER = "sv_SE.UTF-8",
+	LC_ADDRESS = "sv_SE.UTF-8",
+	LC_MONETARY = "sv_SE.UTF-8",
+	LC_NUMERIC = "sv_SE.UTF-8",
+	LC_TELEPHONE = "sv_SE.UTF-8",
+	LC_IDENTIFICATION = "sv_SE.UTF-8",
+	LC_MEASUREMENT = "sv_SE.UTF-8",
+	LC_TIME = "sv_SE.UTF-8",
+	LC_NAME = "sv_SE.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+<h1>com.pehrs.jmeter-json-postprocessor</h1>
+
+<p>This is a plugin for JMeter 2.8</p>
+
+<h2>Download JMETER</h2>
+
+<p>JMETER can be downloaded from <a href="http://jmeter.apache.org/download_jmeter.cgi">jmeter.apache.org</a>.</p>
+
+<h2>Build and Install the plugin</h2>
+
+<p>This plugin enables you to view the formatted JSON responses </p>
+
+<pre><code>$ cd ${SRC}/com.pehrs.jmeter-json-postprocessor
+$ mvn package
+$ mvn dependency:copy-dependencies
+</code></pre>
+
+<p>Unpack and copy the plugin and the dependent jackson jars to the ${JMETERHOME}/lib/ext directory </p>
+
+<pre><code>$ cd ${SRC}/system-test/ininbo-jmeter-addon
+$ cp target/jmeter-json-postprocessor-*.jar ${JMETERHOME}/lib/ext
+$ cp target/dependency/jackson-annotations-*.jar ${JMETERHOME}/lib/ext
+$ cp target/dependency/jackson-core-*.jar ${JMETERHOME}/lib/ext
+$ cp target/dependency/jackson-databind-*.jar ${JMETERHOME}/lib/ext
+</code></pre>
+
+<h2>Using the plugin</h2>
+
+<p>Just add the "JSON PostProcessor" as you would with the "Debug PostProcessor"</p>
+
+</body>
+</html>
