@@ -1,7 +1,7 @@
 
 # com.pehrs.jmeter-json-postprocessor
 
-This is a plugin for JMeter 2.8
+This is a plugin for JMeter 2.9
 
 ## Download JMETER
 
